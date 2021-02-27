@@ -1,10 +1,12 @@
 // scroll quando a section começa a aparecer na tela
 
+import debounce from "./debounce.js";
+
 export default class ScrollAnima {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
-    this.windowHalf = window.innerHeight * 0.5;
-    this.checkDistance = this.checkDistance.bind(this);
+    this.windowHalf = window.innerHeight * 0.6;
+    this.checkDistance = debounce(this.checkDistance.bind(this), 50);
   }
 
   // verifica a distancia de cada section em relção ao topo
