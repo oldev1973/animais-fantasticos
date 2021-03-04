@@ -6,7 +6,7 @@
     <title>Animais Fantásticos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display+SC"
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700|Playfair+Display+SC"
       rel="stylesheet"
     />
     <script>
@@ -34,7 +34,9 @@
           <li><a href="#faq">Faq</a></li>
           <li><a href="#contato">Contato</a></li>
           <li>
-            <a data-modal="abrir" href="login.html">Login →</a>
+            <a data-modal="abrir" href="login.html"
+              >Login <span class="arrow-black"></span
+            ></a>
           </li>
         </ul>
       </nav>
@@ -272,7 +274,7 @@
     </div>
     <section class="modal-container" data-modal="container">
       <div class="modal">
-        <button data-modal="fechar" class="fechar">X</button>
+        <button data-modal="fechar" class="fechar"></button>
         <form action="">
           <label for="email">E-mail</label>
           <input type="text" name="email" id="email" />
